@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/denuncia.css" />
+    <title>Denuncias</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo-div">
+        <img src="../assets/logo.png" alt="logo" id="logo" />
+      </div>
+
+      <ul>
+        <li>
+          <a href="./inicio.html"
+            ><ion-icon name="home" class="icon"></ion-icon>Inicio</a
+          >
+        </li>
+        <li>
+          <a href="../html/processos.html"
+            ><ion-icon name="code-download" class="icon"></ion-icon>Processos</a
+          >
+        </li>
+        <li>
+          <a href="../html/denuncia.html"
+            ><ion-icon name="sync" class="icon"></ion-icon>Denuncias</a
+          >
+        </li>
+        <li>
+          <a href="../html/map.html"
+            ><ion-icon name="pin" class="icon"></ion-icon>Mapa de Ocorrências</a
+          >
+        </li>
+        <li>
+          <a href="../html/suporte.html"
+            ><ion-icon name="paper" class="icon"></ion-icon>Suporte</a
+          >
+        </li>
+          <li>
+            <a href="../html/perfil.html"><ion-icon name="person" class="icon"></ion-icon>Perfil</a>
+          </li>
+      </ul>
+      <div id="profile-div">
+        <ion-icon name="person" id="profile-icon"></ion-icon>
+        <p>User Full name</p>
+      </div>
+    </nav>
+    <form action="">
+      <label for="descricao">Descrição do corrido</label>
+      <textarea
+        name="descricao"
+        id="descricao"
+        placeholder="Digite o texto..."
+      ></textarea>
+
+      <label for="input-date">Endereço</label>
+      <input type="text" id="input-date" placeholder="Digite o endereço..." />
+
+      <label for="input-time">Data e hora</label>
+      <input type="datetime-local" id="input-time" />
+      <label>Adicionar imagem do ocorrido</label>
+      <div id="form-image">
+        <img
+          src="../assets/image-placeholder.svg"
+          alt="Clique para selecionar uma imagem"
+          class="image-picker"
+        />
+        <input type="file" id="upload" class="input-file" />
+        <div id="btn">
+          <button
+            id="button-1"
+            class="open-modal"
+            data-modal="modal"
+            type="button"
+          >
+            + Leve
+          </button>
+          <button
+            id="button-2"
+            class="open-modal"
+            data-modal="modal"
+            type="button"
+          >
+            + Médio
+          </button>
+          <button
+            id="button-3"
+            class="open-modal"
+            data-modal="modal"
+            type="button"
+          >
+            + Grave
+          </button>
+        </div>
+
+        <dialog id="modal">
+          <div id="header">
+            <h1>Tudo certo!</h1>
+            <button id="close-modal">
+              <ion-icon name="close-circle" id="button-close"></ion-icon>
+            </button>
+          </div>  
+          <div id="text-modal">
+            <p>
+              Nós iremos cuidar da sua denuncia e relataremos qualquer ocorrido.
+            </p>
+          </div>
+        </dialog>
+      </div>
+    </form>
+  </body>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="../js/denuncia.js"></script>
+</html>
