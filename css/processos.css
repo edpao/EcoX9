@@ -14,6 +14,7 @@ nav{
   border-right: solid 2px #eee8e8;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 #logo-div{
   border-bottom: solid 2px #eee8e8;
@@ -75,10 +76,12 @@ iframe{
   height: 600px;
 }
 #ocorrencia{
-  align-self: center;
+  display: flex;
+  flex-direction: column;
   font-size: 50px;
   color: #424242;
-  margin-left: 150px;
   width: 250px;
   text-align: center;
+  margin-left: 25%;
+  margin-top: 10%;
 }

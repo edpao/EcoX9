@@ -14,6 +14,7 @@ nav{
   border-right: solid 2px #eee8e8;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 #logo-div{
   border-bottom: solid 2px #eee8e8;
@@ -54,19 +55,3 @@ a{
   margin-right: 10px;
   font-size: 22px;
 }
-#profile-div{
-  margin-top: 25%;
-  height: 80px;
-  background-color:#F5F5F5;
-  color: #424242;
-  display: flex;
-  align-items: center;
-  border-top: solid 2px #eee8e8;
-}
-#profile-icon{
-  font-size: 30px;
-  margin-left: 10px;
-}
-p{
-  margin: 16px 0 5px 12px;
-} 

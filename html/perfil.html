@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/perfil.css"/>
+    <title>Inicio</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo-div">
+        <img src="../assets/logo.png" alt="logo" id="logo" />
+      </div>
+
+      <ul>
+        <li>
+          <a href="../html/inicio.html"
+            ><ion-icon name="home" class="icon"></ion-icon>Inicio</a
+          >
+        </li>
+        <li>
+          <a href="../html/processos.html"
+            ><ion-icon name="code-download" class="icon"></ion-icon>Processos</a
+          >
+        </li>
+        <li>
+          <a href="../html/denuncia.html"
+            ><ion-icon name="sync" class="icon"></ion-icon>Denuncias</a
+          >
+        </li>
+        <li>
+          <a href="../html/map.html"
+            ><ion-icon name="pin" class="icon"></ion-icon>Mapa de Ocorrências</a
+          >
+        </li>
+        <li>
+          <a href="suporte.html"
+            ><ion-icon name="paper" class="icon"></ion-icon>Suporte</a
+          >
+        </li>
+        <li>
+          <a href="perfil.html"
+            ><ion-icon name="person" class="icon"></ion-icon>Perfil</a
+          >
+        </li>
+      </ul>
+
+    </nav>
+    
+    <div id="profile">
+      <p  id="pf"> Perfil</p>
+      <div id="center"> 
+      <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/18765757-icone-de-perfil-de-usuario-em-estilo-simples-ilustracao-em-avatar-membro-no-fundo-isolado-conceito-de-negocio-de-sinal-de-permissao-humana-vetor.jpg" alt="">
+      <h2>Usuario</h2 >
+      <p id="em"> daleboy@gmail.com</p>
+      </div>
+    
+      <div id="inf">
+        <ul>
+          <li>
+            <label for="name">Nome</label> 
+          </li>
+          <li>
+          <input type="text" name="name">
+          </li>
+          <li>
+            <label for="email">Email</label>
+          </li>
+          <li>
+            <input type="email" name="email" >
+          </li>
+          <li>
+            <label for="senha">Mudar Senha</label>
+          </li>
+          <li>
+            <input type="text" name="senha">
+          </li>
+        </ul>
+      </div>
+      <br>
+      <div id="sair">
+        <br>
+        <h3>Sair da conta?</h3>
+        <a href="login.html"><button>Sair</button></a>
+      </div>
+      <a href="login.html"><p id="is" onclick="alert('Conta apagada com sucesso!')">Apagar conta</p></a>
+      <br><br>
+    </div>
+  </body>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</html>

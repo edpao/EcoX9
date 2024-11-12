@@ -10,11 +10,12 @@ body{
   flex-direction: row;
 }
 nav{
-  width: 25%;
+  width: 260px;
   height: 100vh;
   border-right: solid 2px #eee8e8;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 #logo-div{
   border-bottom: solid 2px #eee8e8;
@@ -55,46 +56,15 @@ a{
   margin-right: 10px;
   font-size: 22px;
 }
-#profile-div{
-  height: 80px;
-  background-color:#F5F5F5;
-  color: #424242;
-  display: flex;
-  align-items: center;
-  border-top: solid 2px #eee8e8;
-}
-#profile-icon{
-  font-size: 30px;
-  margin-left: 10px;
-}
-p{
-  margin: 16px 0 5px 12px;
-}
 .icon{
   align-self: center;
   margin-right: 10px;
   font-size: 22px;
 }
-#profile-div{
-  margin-top: 25%;
-  height: 80px;
-  background-color:#F5F5F5;
-  color: #424242;
-  display: flex;
-  align-items: center;
-  border-top: solid 2px #eee8e8;
-}
-#profile-icon{
-  font-size: 30px;
-  margin-left: 10px;
-}
-p{
-  margin: 16px 0 5px 12px;
-}
 form{
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  margin-left: 25%;
   margin-top: 90px;
   width: 100%;
 }
@@ -198,6 +168,7 @@ dialog {
   transform: translateY(100vh); 
   transition: transform 0.5s ease-out, opacity 0.5s ease-out; 
   opacity: 0; 
+  background-color: white;
 }
 
 dialog.open {
@@ -208,7 +179,7 @@ dialog.open {
   display: flex;
   align-items: center;
   justify-content: end;
-  border-bottom: solid 1px #eee8e8;
+  border-bottom: solid 1px #9E9E9E;
   padding-bottom: 15px;
   gap: 188px;
 }
@@ -238,4 +209,34 @@ h1{
   width: 50%;
   text-align: center;
   margin-top: 100px;
+}
+
+#anonimo{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   gap: 25px;
+}
+#anonimo p{
+  color: #424242;
+}
+#buttons{
+  display: flex;
+  gap: 250px;
+}
+.btns-style{
+  border-radius: 8px;
+}
+#btn-sim{
+  color: black;
+  background-color: #99DC8A;
+}
+#btn-nao{
+  color: white;
+  background-color: #B62F2F;
+}
+#btn-enviar{
+  background-color: #05478F;
+  color: white;
 }

@@ -14,6 +14,7 @@ nav{
   border-right: solid 2px #eee8e8;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 #logo-div{
   border-bottom: solid 2px #eee8e8;

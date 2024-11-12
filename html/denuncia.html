@@ -38,14 +38,12 @@
             ><ion-icon name="paper" class="icon"></ion-icon>Suporte</a
           >
         </li>
-          <li>
-            <a href="../html/perfil.html"><ion-icon name="person" class="icon"></ion-icon>Perfil</a>
-          </li>
+        <li>
+          <a href="../html/perfil.html"
+            ><ion-icon name="person" class="icon"></ion-icon>Perfil</a
+          >
+        </li>
       </ul>
-      <div id="profile-div">
-        <ion-icon name="person" id="profile-icon"></ion-icon>
-        <p>User Full name</p>
-      </div>
     </nav>
     <form action="">
       <label for="descricao">Descrição do corrido</label>
@@ -69,45 +67,38 @@
         />
         <input type="file" id="upload" class="input-file" />
         <div id="btn">
-          <button
-            id="button-1"
-            class="open-modal"
-            data-modal="modal"
-            type="button"
-          >
-            + Leve
-          </button>
-          <button
-            id="button-2"
-            class="open-modal"
-            data-modal="modal"
-            type="button"
-          >
-            + Médio
-          </button>
-          <button
-            id="button-3"
-            class="open-modal"
-            data-modal="modal"
-            type="button"
-          >
-            + Grave
-          </button>
+          <button id="button-1" type="button">+ Leve</button>
+          <button id="button-2" type="button">+ Médio</button>
+          <button id="button-3" type="button">+ Grave</button>
         </div>
-
         <dialog id="modal">
           <div id="header">
             <h1>Tudo certo!</h1>
             <button id="close-modal">
               <ion-icon name="close-circle" id="button-close"></ion-icon>
             </button>
-          </div>  
+          </div>
           <div id="text-modal">
             <p>
               Nós iremos cuidar da sua denuncia e relataremos qualquer ocorrido.
             </p>
           </div>
         </dialog>
+      </div>
+      <div id="anonimo">
+        <p>Deseja se manter anônimo?</p>
+        <div id="buttons">
+          <button class="btns-style" id="btn-sim" type="button">Sim</button>
+          <button class="btns-style" id="btn-nao" type="button">Não</button>
+        </div>
+        <button
+          class="open-modal"
+          data-modal="modal"
+          type="button"
+          id="btn-enviar"
+        >
+          Enviar
+        </button>
       </div>
     </form>
   </body>
